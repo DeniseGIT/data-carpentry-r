@@ -16,3 +16,12 @@ length <- 1 # length in metres
 width <- 10 # width in metres
 area <- length * width
 area
+
+# writing functions
+b <- sqrt(a) # b will be the square root of a
+
+round(3.14159, digits = 2)
+
+
+
+
