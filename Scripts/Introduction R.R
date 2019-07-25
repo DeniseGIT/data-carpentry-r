@@ -22,6 +22,8 @@ b <- sqrt(a) # b will be the square root of a
 
 round(3.14159, digits = 2)
 
+no_members <- c(3, 7, 10, 6) # c is for combining numbers into a vector
+length(no_members)
 
-
+str(no_members)
 
