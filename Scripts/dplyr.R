@@ -88,3 +88,17 @@ interviews %>%
   summarize(mean_no_membrs = mean(no_membrs),
             min_membrs = min(no_membrs), max_membrs = max(no_membrs),
 n = n())
+
+# spreading out the data
+# add another col to the dta set
+interviews_spread <- interviews %>%
+  mutate(wall_type_logical = TRUE) %>%
+  spread(key=respondent_wall_type, value = wall_type_logical, fill = FALSE)
+
+view(interviews_spread)
+
+# gather data
+
+interviews_gather <- interviews %>%
+gather(key = "respondant_wall_type" , value = "wall_type_logical" , 
+       burntbricks:sunbricks)  
