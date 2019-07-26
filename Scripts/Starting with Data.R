@@ -45,3 +45,12 @@ interviews[1:6, ]
 interviews[, -1] # removes 1st col
 interviews
 interviews_no_id <- interviews[, -1] # removes 1st col permanently
+
+# excercise
+
+interviews_100 <- interviews[100,]
+nrow <- (interviews)
+tail(as.data.frame(interviews_100))
+inteviews_last <- tail(as.data.frame(interviews_100))
+nrow(inteviews_last)                   
+interviews_last <- tail(interviews, 1)
