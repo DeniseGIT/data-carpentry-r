@@ -102,3 +102,5 @@ view(interviews_spread)
 interviews_gather <- interviews %>%
 gather(key = "respondant_wall_type" , value = "wall_type_logical" , 
        burntbricks:sunbricks)  
+
+
